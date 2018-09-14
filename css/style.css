@@ -6,11 +6,21 @@ body {
     margin: auto;
   }
 
+}
+
+.title {
+   color: #F39933;
+}
+
 .main-header {
     margin: auto;
+    height: 600px;
     padding-top: .5em;
     padding-bottom: .5em;
     text-align: center;
+    background-image: url('../img/keyboard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-nav {
