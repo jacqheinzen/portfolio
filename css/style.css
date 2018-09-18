@@ -6,10 +6,9 @@ body {
     margin: auto;
   }
 
-}
-
 .title {
    color: #F39933;
+   font-size: 78pt;
 }
 
 .main-header {
@@ -42,10 +41,21 @@ a {
     height: auto;
 }
 
-.about {
+.primary-content li:nth-child(even) {
+    font-weight: bold;
+}
+
+.primary-content {
     display: block;
     padding-top: 10px;
     background-color: #6BA59C;
+}
+
+.jacq {
+    border-radius: 50%;
+    object-fit: contain;
+    width: 150px;
+
 }
 .footer {
     height: 75px;
@@ -61,7 +71,7 @@ a {
         margin: auto;
         padding: .5em .5em;
     }
-    .about {
+    .primary-content {
         display: flex;
         padding-top: 10px;
     }
@@ -89,7 +99,7 @@ a {
         flex-direction: row;
     }
 
-    .about {
+    .primary-content {
         padding: 10px 300px;
     }
 }
