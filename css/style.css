@@ -22,13 +22,20 @@ body {
     background-repeat: no-repeat;
 }
 
-.main-nav {
+li { 
     list-style: none;
+}
+
+.main-nav {
     text-transform: uppercase;
 }
 
 .main-nav li {
     margin-right: 10px;
+}
+
+.project-list {
+    display: none;
 }
 
 a {
