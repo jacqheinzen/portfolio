@@ -28,16 +28,24 @@ li {
 
 .main-nav {
     text-transform: uppercase;
+    height: 400px;
 }
 
 .main-nav li {
-    margin-right: 10px;
+    margin: 80px 80px;
 }
 
 .project-list {
     display: none;
+    font-size: 10pt;
+    border: solid slategrey 5px;
+    background-color: #A499A9;
+    width: 100%;
 }
 
+.dropdown {
+    border-bottom: solid darkslategrey 5px;
+}
 a {
     text-decoration: none;
     color: #EE9C6A;
@@ -52,21 +60,25 @@ a {
     height: auto;
 }
 
-.primary-content li:nth-child(even) {
-    font-weight: bold;
-}
-
 .primary-content {
     display: block;
     padding-top: 10px;
-    background-color: #6BA59C;
+    background-color: #A499A9;
+    text-align: center;
 }
 
 .jacq {
     border-radius: 50%;
     object-fit: contain;
     width: 150px;
+    align-content: center;
+}
 
+.secondary-content {
+    display: block;
+    background-color: #A499A9;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .footer {
     height: 75px;
@@ -112,5 +124,18 @@ a {
 
     .primary-content {
         padding: 10px 300px;
+        text-align: left;
+    }
+
+    .secondary-content {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .research,
+    .web,
+    .art {
+        display: flex;
+        flex-direction: column;
     }
 }
