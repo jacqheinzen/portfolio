@@ -35,24 +35,24 @@ li {
     margin: 80px 80px;
 }
 
-.project-list {
-    display: none;
-    font-size: 10pt;
-    border: solid slategrey 5px;
-    background-color: #A499A9;
-    width: 100%;
+.dropdown-list {
+    display: block;
+    font-size: 7pt;
+    width: 1em;
 }
 
-.dropdown {
-    border-bottom: solid darkslategrey 5px;
-}
 a {
     text-decoration: none;
     color: #EE9C6A;
 }
 
+.contact-modal {
+    display: none;
+}
+
 .contact-form {
-    display:  none;
+    background-color: peachpuff;
+    border-radius: 10%;
 }
 
 .keyboard {
@@ -65,13 +65,6 @@ a {
     padding-top: 10px;
     background-color: #A499A9;
     text-align: center;
-}
-
-.jacq {
-    border-radius: 50%;
-    object-fit: contain;
-    width: 150px;
-    align-content: center;
 }
 
 .secondary-content {
@@ -93,6 +86,13 @@ a {
         width: 100%;
         margin: auto;
         padding: .5em .5em;
+    }
+
+    .dropdown-list {
+        display: none;
+    }
+    .work-nav:hover .dropdown-list {
+        display: block;
     }
     .primary-content {
         display: flex;

@@ -10,15 +10,16 @@
     <h1 class="title">ja<br><br><br>cq</h1>
     <ul class="main-nav">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a>
-        <div class="project-list">
-          <a href=# class="dropdown">Applied Research</a>
-          <a href=# class="dropdown">Web Development</a>
-          <a href=# class="dropdown">Performance Art</a>
-        </div>
-      <li><a href="#">Contact</a></li>
-      <div class="contact-form">
-        <form>
+      <li class="work-nav"><a href="#">Work</a>
+        <div class="dropdown-list">
+          <a href=# class="dropdown-content">Applied Research</a><br>
+          <a href=# class="dropdown-content">Web Development</a><br>
+          <a href=# class="dropdown-content">Performance Art</a>
+        </div> 
+
+      <li class="modal-nav"><a href="#">Contact</a></li> <!-- Contact Form -->
+      <div class="contact-modal">
+        <form class="contact-form">
           <h1>Holler at ya girl!</h1>
           <label>Name</label>
           <input type="text">
@@ -27,16 +28,15 @@
           <label>What's on your mind?</label>
           <input type="text">
           <button type="submit">Submit</button>
+          <span class="exit-modal">Nevermind, I don't want to talk to you.</span>
 
         </form>
       </div>
     </ul>
     
     </header>
-    
     <div class="primary-content">
       <div class="primary col">
-        <img src="img/jacq.jpg" class="jacq">
         <h2>Hey there!</h2>
         <p>My name is Jacqueline, I'm a professional arm wrestler, musician, and mediocre artist living in Louisville, Kentucky.</p>
       </div>
@@ -55,7 +55,7 @@
      </div>
     </div>
     <div class="secondary-content">
-      <h2>Projects</h2>
+      <h2>Work</h2>
       <div class="research"><h2>Applied Research</h2>
         <h3>Market Research</h3>
         <p>I performed market research by connecting quantitative data with my personal primary research, done through survey, qualitative interviews, and participant observation. With my analysis, Wild Dog Rose was able to connect with their customers at a deeper level.</p>
@@ -64,9 +64,19 @@
       </div>
       <div class="web">
        <h2>Web Development</h2>
+       <p>I am a current student of Code Louisville, an innovative work training program in Louisville, Kentucky that coaches students on software development.</p>
+       <label>Languages:</label>
+       <ul>
+         <li>HTML</li>
+         <li>CSS</li>
+         <li>JavaScript</li>
+       </ul>
       </div>
       <div class="art">
         <h2>Performance Art</h2>
+        <h3>Louisville Championship Arm Wrestling</h3>
+        <h3>Experimental Music</h3>
+        <h3>Baby Horse Theater Group</h3>
       </div>
     </div>
   <footer class="footer">
