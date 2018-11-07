@@ -2,37 +2,38 @@
   <head>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fantasque-sans-mono" type="text/css"/>
+    <script src="jquery-3.3.1.js"></script>
     <title>Jacqueline Heinzen</title>
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header" id="top">
     <h1 class="title">ja<br><br><br>cq</h1>
     <ul class="main-nav">
-      <li><a href="#">Home</a></li>
-      <li class="work-nav"><a href="#">Work</a>
-        <div class="dropdown-list">
-          <a href=# class="dropdown-content">Applied Research</a><br>
-          <a href=# class="dropdown-content">Web Development</a><br>
-          <a href=# class="dropdown-content">Performance Art</a>
-        </div> 
+      <li><a href="#top" class="anchorLink">Home</a></li>
+      <li class="work-nav"><a href="#work" class="anchorLink">Work</a></li>
+        <div class="dropdown-content">
+          <a href="#research" class="dropdown-content">Applied Research</a><br>
+          <a href="#webdev" class="dropdown-content">Web Development</a><br>
+          <a href="#art" class="dropdown-content">Performance Art</a>
+        </div>
 
       <li class="modal-nav"><a href="#">Contact</a></li> <!-- Contact Form -->
-      <div class="contact-modal">
-        <form class="contact-form">
-          <h1>Holler at ya girl!</h1>
-          <label>Name</label>
-          <input type="text">
-          <label>Email</label>
-          <input type="email">
-          <label>What's on your mind?</label>
-          <input type="text">
-          <button type="submit">Submit</button>
-          <span class="exit-modal">Nevermind, I don't want to talk to you.</span>
-
-        </form>
-      </div>
     </ul>
+    <div class="contact-modal">
+      <form class="contact-form">
+        <h1>Holler at ya girl!</h1>
+        <label>Name</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="email">
+        <label>What's on your mind?</label>
+        <input type="text">
+        <button type="submit">Submit</button>
+        <span class="exit-modal">&times;</span>
+      </form>
+    </div>
     
     </header>
     <div class="primary-content">
@@ -55,14 +56,15 @@
      </div>
     </div>
     <div class="secondary-content">
-      <h2>Work</h2>
-      <div class="research"><h2>Applied Research</h2>
+      <h2 id="work">Work</h2>
+      <div class="research" id="research"><h2>Applied Research</h2>
         <h3>Market Research</h3>
+        <img href="img/wdr.png">
         <p>I performed market research by connecting quantitative data with my personal primary research, done through survey, qualitative interviews, and participant observation. With my analysis, Wild Dog Rose was able to connect with their customers at a deeper level.</p>
         <h3>Needs Assessment</h3>
         <p>The Backside Learning Center is a nonprofit that serves the immigrant workers of Churchill Downs. I researched barriers to access among key demographics that led the BLC to have a deeper cultural understanding of those they want to serve. They tweaked their programs to encourage participation at <strong>any</strong> level of English.</p>
       </div>
-      <div class="web">
+      <div class="web" id="webdev">
        <h2>Web Development</h2>
        <p>I am a current student of Code Louisville, an innovative work training program in Louisville, Kentucky that coaches students on software development.</p>
        <label>Languages:</label>
@@ -72,7 +74,7 @@
          <li>JavaScript</li>
        </ul>
       </div>
-      <div class="art">
+      <div class="art" id="art">
         <h2>Performance Art</h2>
         <h3>Louisville Championship Arm Wrestling</h3>
         <h3>Experimental Music</h3>
@@ -80,7 +82,7 @@
       </div>
     </div>
   <footer class="footer">
-    <p>This is a footer, I'll use it eventually.</p>
+    <p>Thanks for visiting!</p>
   </footer>
   </body>
   <script src="javascript/javascript.js"></script>

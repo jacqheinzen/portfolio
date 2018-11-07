@@ -1,7 +1,7 @@
 /* Base Styles */
 body {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
+    font-family: 'FantasqueSansMonoRegular', sans-serif;
+    font-size: medium;
     line-height: 26px;
     margin: auto;
   }
@@ -35,9 +35,10 @@ li {
     margin: 80px 80px;
 }
 
-.dropdown-list {
+.dropdown-content {
+    position: relative;
     display: block;
-    font-size: 7pt;
+    font-size: medium;
     width: 1em;
 }
 
@@ -48,11 +49,26 @@ a {
 
 .contact-modal {
     display: none;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .contact-form {
-    background-color: peachpuff;
-    border-radius: 10%;
+    background-color: #CDB8C9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    
+}
+
+.exit-modal {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .keyboard {
@@ -78,6 +94,14 @@ a {
     padding-top: 10px;
     background: slategrey;
 }
+
+.top {
+    display: block;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+}
 /* Media Queries */
 @media (min-width: 769px) {
     .main-header,
@@ -88,11 +112,13 @@ a {
         padding: .5em .5em;
     }
 
-    .dropdown-list {
+    .dropdown-content {
         display: none;
+        min-width: 150px;
     }
-    .work-nav:hover .dropdown-list {
-        display: block;
+    
+    .work-nav:hover .dropdown-content {
+        display: inline-block;
     }
     .primary-content {
         display: flex;
