@@ -1,8 +1,7 @@
 <html>
   <head>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fantasque-sans-mono" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <script src="jquery-3.3.1.js"></script>
     <title>Jacqueline Heinzen</title>
   </head>
@@ -16,7 +15,6 @@
         <div class="dropdown-content">
           <a href="#research" class="dropdown-content">Applied Research</a><br>
           <a href="#webdev" class="dropdown-content">Web Development</a><br>
-          <a href="#art" class="dropdown-content">Performance Art</a>
         </div>
 
       <li class="modal-nav"><a href="#">Contact</a></li> <!-- Contact Form -->
@@ -56,30 +54,22 @@
     </div>
     <div class="secondary-content">
       <h2 id="work">Work</h2>
-      <div class="research" id="research"><h2>Applied Research</h2>
-        <h3>Market Research</h3>
-        <img src="img/wdr.png" alt="A photo of the owners of Wild Dog Rose." class="wdr">
-        <p>I performed market research by connecting quantitative data with my personal primary research, done through survey, qualitative interviews, and participant observation. With my analysis, Wild Dog Rose was able to connect with their customers at a deeper level.</p>
+      <h2 id="research">Applied Research</h2>
+      <h3>Market Research</h3>
+        <div class="container">
+          <div class="item-1 item"><img src="img/wdr.png" alt="A photo of the owners of Wild Dog Rose." class="wdr"></div>
+          <div class="item-2 item"><p>I performed market research by connecting quantitative data with my personal primary research, done through survey, qualitative interviews, and participant observation. With my analysis, Wild Dog Rose was able to connect with their customers at a deeper level.</p></div>
+      </div>      
         <h3>Needs Assessment</h3>
-        <img src="img/blc.jpg" alt="A photo of Jacqueline with students at the Backside Learning Center"
-        <p>The Backside Learning Center is a nonprofit that serves the immigrant workers of Churchill Downs. I researched barriers to access among key demographics that led the BLC to have a deeper cultural understanding of those they want to serve. They tweaked their programs to encourage participation at <strong>any</strong> level of English.</p>
+      <div class="container">
+        <div class="item-3 item"><img src="img/blc.jpg" alt="A photo of Jacqueline with students at the Backside Learning Center" class="blc"></div>
+        <div class="item-4 item"><p>The Backside Learning Center is a nonprofit that serves the immigrant workers of Churchill Downs. I researched barriers to access among key demographics that led the BLC to have a deeper cultural understanding of those they want to serve. They tweaked their programs to encourage participation at <strong>any</strong> level of English.</p></div>
       </div>
-      <div class="web" id="webdev">
-       <h2>Web Development</h2>
-       <img src="img/computer.jpg" alt="A photo of a computer">
-       <p>I am a current student of Code Louisville, an innovative work training program in Louisville, Kentucky that coaches students on software development.</p>
-       <label>Languages:</label>
-       <ul>
-         <li>HTML</li>
-         <li>CSS</li>
-         <li>JavaScript</li>
+      <h3>Web Development</h3>
+      <div class="container" id="webdev">
+       <div class="item-5 item"><img src="img/computer.jpg" alt="A photo of a computer" class="comp"></div>
+       <div class="item-6 item"><p>I am a current student of Code Louisville, an innovative work training program in Louisville, Kentucky that coaches students on software development.</p></div>
        </ul>
-      </div>
-      <div class="art" id="art">
-        <h2>Performance Art</h2>
-        <h3>Louisville Championship Arm Wrestling</h3>
-        <h3>Experimental Music</h3>
-        <h3>Baby Horse Theater Group</h3>
       </div>
     </div>
   <footer class="footer">
