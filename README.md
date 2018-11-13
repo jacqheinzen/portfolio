@@ -1,2 +1,2 @@
 # portfolio
-A simple portfolio website built for Code Louisville's Front End Web Development course. For this project, I avoided using front-end frameworks like Bootstrap because I felt it was important to get experience building layouts (for example, the contact modal) from scratch. Using the same reasoning, I used vanilla JavaScript as well as a bit of jQuery so I could practice using both.
+A simple portfolio website built for Code Louisville's Front End Web Development course. For this project I avoided using Bootstrap, as appealing as it was, because I felt it was important to get experience building layouts from scratch. In my .js file, I used some vanilla JavaScript and some jQuery to practice using both.
