@@ -8,48 +8,49 @@
 
   <body>
     <header class="main-header" id="top">
-    <h1 class="title">ja<br><br><br>cq</h1>
-    <ul class="main-nav">
-      <li><a href="#top" class="anchorLink">Home</a></li>
-      <li class="work-nav"><a href="#work" class="anchorLink">Work</a>
-        <div class="dropdown-content">
-          <a href="#research" class="dropdown-content anchorLink">Applied Research</a><br>
-          <a href="#webdev" class="dropdown-content anchorLink">Web Development</a><br>
-        </div></li>
-
-      <li class="modal-nav"><a href="#">Contact</a></li> <!-- Contact Form -->
-    </ul>
-    <div class="contact-modal">
-      <div class="container"><form class="contact-form">
-        <h1>I'd love to hear from you!</h1>
-        <div class="item name"><label>Name</label>
-        <input type="text"></div>
-        <div class="item email"><label>Email</label>
-        <input type="email"></div>
-        <div class="item text"><label>What's on your mind?</label>
-        <input type="text"></div>
-        <button type="submit" class="button">Submit</button>
-        <span class="exit-modal">&times;</span>
-      </form></div>
-    </div>
-    
+      <h1 class="title">ja<br><br><br>cq</h1>
+      <ul class="main-nav">
+        <li><a href="#top" class="anchorLink">Home</a></li>
+        <li class="work-nav"><a href="#work" class="anchorLink">Work</a>
+          <!-- Dropdown Menu -->
+          <div class="dropdown-content">
+            <a href="#research" class="dropdown-content anchorLink">Applied Research</a><br>
+            <a href="#webdev" class="dropdown-content anchorLink">Web Development</a><br>
+          </div></li>
+        <li class="modal-nav"><a href="#">Contact</a></li>
+      </ul>
+      <!-- Contact Form -->
+      <div class="contact-modal">
+        <div class="container"><form class="contact-form">
+          <h1>I'd love to hear from you!</h1>
+          <div class="item name">
+            <label for="name">Name</label>
+            <input type="text" name="name"></div>
+          <div class="item email">
+            <label for="email">Email</label>
+            <input type="email" name="email" required></div>
+          <div class="item message">
+            <label for="message">What's on your mind?</label>
+            <input type="text" name="message" required></div>
+          <button type="submit" class="button">Submit</button>
+          <span class="exit-modal">&times;</span>
+        </form></div>
+      </div>
     </header>
     <div class="primary-content">
-      <div class="primary col">
-      <h2>Anthropologist, web developer, musician in Louisville, Kentucky.</h2>
-      </div>
-      <div class="secondary col">
-        <h2>Skills:</h2>
-        <ul class="skillset">
-          <li>Qualitative Research</li>
-          <li>Impact Assessment</li>
-          <li>Performance Art</li>
-          <li>Volunteer Management</li>
-          <li>Project Management</li>
-          <li>Event Coordination</li>
-          <li>Social Media Management</li>
-          <li>Market Research</li>
-        </ul>
+      <div class="intro"><h2>Anthropologist, web developer, musician in Louisville, Kentucky.</h2></div>
+      <hr>
+      <div class="skillset">
+          <div class="grid">Qualitative Research</div>
+          <div class="grid">Impact Assessment</div>
+          <div class="grid">Performance Art</div>
+          <div class="grid">Volunteer Management</div>
+          <div class="grid">Project Management</div>
+          <div class="grid">Event Coordination</div>
+          <div class="grid">Social Media Management</div>
+          <div class="grid">Market Research</div>
+          <div class="grid">Front-End Web Development</div>
+        </div>
      </div>
     </div>
     <div class="secondary-content">
@@ -68,7 +69,7 @@
       <h3>Web Development</h3>
       <div class="container" id="webdev">
        <div class="item-5 item"><img src="img/computer.jpg" alt="A photo of a computer" class="comp"></div>
-       <div class="item-6 item"><p>I am a current student of Code Louisville, an innovative work training program in Louisville, Kentucky that coaches students on software development.</p></div>
+       <div class="item-6 item"><p>I am a current student of Code Louisville, an innovative work training program in Louisville, Kentucky that coaches students on software development. So far, I have learned HTML, CSS, and JavaScript, with my future sights on UX/UI research and design.</p></div>
        </ul>
       </div>
     </div>

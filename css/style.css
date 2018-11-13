@@ -80,22 +80,28 @@ a {
     height: auto;
 }
 
+.intro {
+    text-align: center;
+    color: antiquewhite;opacity: .6;
+    padding-top: 10px;
+}
+
 .primary-content {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px 10px;
     background-color: slategray;
     text-align: center;
 }
 
 .secondary-content {
     display: block;
-    background-color: #A499A9;
+    background-color: #594F5A;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .footer {
     height: 75px;
     padding-top: 10px;
@@ -112,14 +118,25 @@ a {
 
 .wdr, .blc, .comp {
     height: 200px;
+    border: 1px solid antiquewhite;
+    border-radius: 4px;
 }
 
 .container {
     display: block;
     align-content: center;
+    background-color: #A499A9;
+    border-radius: 15px;
+    box-shadow: 0 0 25px darkslategray;
 }
 
-.name, .email, .text {
+.container-2 {
+    background-color: #A499A9;
+    border-radius: 15px;
+    box-shadow: 0 0 25px darkslategray;
+}
+
+.name, .email, .message {
     font-size: large;
     font-weight: bold;
     padding-bottom: 10px;
@@ -145,11 +162,6 @@ a {
         display: block;
     }
 
-    .primary-content {
-        display: flex;
-        padding-top: 10px;
-    }
-
     #work {
         text-align: center;
     }
@@ -157,12 +169,10 @@ a {
 
     .secondary-content {
         text-align: left;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
-    .col {
-        flex: 1;
-
-    }
     .main-header {
         flex-direction: column;
         justify-content: space-between;
@@ -178,8 +188,32 @@ a {
         flex-direction: row-reverse;
     }
 
-    .item {
-        margin-right: 20px;
+    .item-2,
+    .item-6 {
+        padding-left: 20px;
+    }
+
+    .item-4 {
+        padding-right: 20px;
+    }
+
+    .skillset {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+
+    .grid {
+        flex: 1;
+        text-align: center;
+        align-items: center;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: antiquewhite;opacity: .6;
     }
 }
 
@@ -201,11 +235,18 @@ a {
     }
 
     .primary-content {
+        display: block;
         padding: 10px 300px;
         text-align: left;
     }
+
+    .skillset {
+        flex-wrap: nowrap;
+    }
+
+    @media (min-width: 1250px) {
     .secondary-content {
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 300px;
+        padding-right: 300px;
     }
 }
