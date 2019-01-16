@@ -17,8 +17,7 @@ body {
 .main-header {
     margin: auto;
     height: 500px;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5em;
     text-align: center;
     background-image: url('../img/keyboard.jpg');
     background-size: cover;
@@ -125,11 +124,13 @@ a {
     font-size: large;
 }
 
-.wdr, .blc, .comp {
-    height: 200px;
+.wdr, .blc, .comp, .conversation-club {
+    height: 300px;
+    width: 300px;
     border: 1px solid antiquewhite;
     border-radius: 4px;
 }
+
 
 .container {
     display: block;
@@ -197,7 +198,8 @@ a {
 
     .container-2 {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        padding-bottom: 10px;
     }
 
     .item-2,
@@ -208,6 +210,7 @@ a {
     .item-4 {
         padding-right: 20px;
         padding-left: 20px;
+        
     }
 
     .skillset {
